@@ -1,0 +1,621 @@
+/* ==========================================================================
+   UDAYAN BORGE (MR_RAJEE) — RESPONSIVE MEDIA QUERIES
+   Target Breakpoints: 1440px, 1280px, 1024px, 768px, 480px, 390px, 360px
+   ========================================================================== */
+
+/* Large Laptops / Desktops (1440px and below) */
+@media screen and (max-width: 1440px) {
+  :root {
+    --container-padding: 2.5rem;
+  }
+}
+
+/* Standard Laptops (1280px and below) */
+@media screen and (max-width: 1280px) {
+  :root {
+    --container-padding: 2rem;
+    --header-height: 80px;
+  }
+
+  .hero-canvas-container {
+    width: 50%;
+  }
+
+  .hero-headline {
+    font-size: clamp(3rem, 5.8vw, 5.2rem);
+  }
+}
+
+/* Tablets Landscape / Medium Screens (1024px and below) */
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-canvas-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    order: -1;
+  }
+
+  .hero-left {
+    z-index: 2;
+  }
+
+  .hero-headline {
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+}
+
+/* Tablets Portrait & Large Mobiles (768px and below) */
+@media screen and (max-width: 768px) {
+  :root {
+    --container-padding: 1.5rem;
+    --header-height: 70px;
+  }
+
+  .nav-links {
+    display: none; /* Mobile menu active */
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .hero-section {
+    padding-top: calc(var(--header-height) + 1rem);
+    padding-bottom: 2rem;
+  }
+
+  .hero-canvas-container {
+    height: 360px;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary, .btn-secondary {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .scroll-indicator {
+    align-self: flex-start;
+  }
+  /* Selected Work Responsive Rules */
+  .project-card, .project-card.reverse {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .project-card.reverse .project-visual-wrapper {
+    order: 0;
+  }
+
+  .project-visual-wrapper {
+    order: -1;
+  }
+  /* Case Study Modal Tablet Responsive */
+  .cs-body-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .cs-info-card {
+    position: relative;
+    top: 0;
+  }
+}
+
+/* Tablets Portrait & Large Mobiles (768px and below) */
+@media screen and (max-width: 768px) {
+  :root {
+    --container-padding: 1.5rem;
+    --header-height: 70px;
+  }
+
+  .nav-links {
+    display: none; /* Mobile menu active */
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .hero-section {
+    padding-top: calc(var(--header-height) + 1rem);
+    padding-bottom: 2rem;
+  }
+
+  .hero-canvas-container {
+    height: 360px;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary, .btn-secondary {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .scroll-indicator {
+    align-self: flex-start;
+  }
+
+  .project-card.built-flagship {
+    padding: 2rem 1.5rem;
+  }
+
+  .work-group-divider {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .work-transition-block {
+    padding: 3.5rem 1.5rem;
+  }
+
+  /* Case Study Mobile Nav */
+  .cs-nav-buttons {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cs-nav-btn.next {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .lb-stage {
+    position: relative;
+  }
+
+  .lb-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+  }
+
+  /* Experiments / Lab Mobile Responsiveness */
+  .experiments-section {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .lab-header-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .lab-filter-bar {
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .lab-item {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.75rem 1rem;
+  }
+
+  .lab-item:hover {
+    transform: none;
+  }
+
+  .lab-item-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .lab-item-meta {
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+  }
+
+  .lab-tech-pills {
+    justify-content: flex-start;
+  }
+
+  .lab-action-btn {
+    align-self: flex-start;
+  }
+
+  .lab-transition-block {
+    margin-top: 4rem;
+    padding: 3rem 1.25rem;
+  }
+
+  /* About / The Builder Responsiveness */
+  .about-section {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .about-header-intro {
+    margin-bottom: 3rem;
+  }
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .about-visual-frame {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .about-manifesto-block {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 4rem;
+    border-radius: 16px;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .about-capabilities-block {
+    margin-bottom: 4rem;
+  }
+
+  .about-meta-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .about-personal-column, .about-location-column {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-transition-block {
+    margin-top: 0;
+    padding: 3.5rem 1.25rem;
+  }
+
+  /* Toolbox / Skills Responsiveness */
+  .toolbox-section {
+    padding: 4rem 0 3rem 0;
+  }
+
+  .toolbox-header-intro {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .toolbox-wall-container {
+    gap: 3rem;
+  }
+
+  .toolbox-category-block {
+    padding-top: 2rem;
+  }
+
+  .toolbox-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .skill-name {
+    font-size: clamp(1.15rem, 4vw, 1.4rem);
+  }
+
+  .skill-desc {
+    font-size: 0.8rem;
+  }
+
+  /* Milestones / Hackathons Responsiveness */
+  .milestones-section {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .milestones-header-intro {
+    margin-bottom: 3rem;
+  }
+
+  .compact-achievement-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .compact-achievement-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .photo-hero-wrapper {
+    max-height: 280px;
+  }
+
+  .photo-secondary-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .roster-chips-row {
+    gap: 0.75rem 1rem;
+    line-height: 1.8;
+  }
+
+  .timeline-row-item {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .row-meta-col {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Contact & Footer Responsiveness */
+  .contact-section {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .contact-editorial-container {
+    gap: 3.5rem;
+  }
+
+  .contact-header-block {
+    padding-bottom: 2.5rem;
+  }
+
+  /* Contact Section Responsive Rules */
+  .contact-two-column-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .form-lines-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-submit-btn {
+    width: 100%;
+  }
+
+  .contact-personal-signature {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .sig-title-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .sig-corner-web {
+    width: 65px;
+    height: 65px;
+    opacity: 0.25;
+  }
+
+  .footer-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .footer-hero-row {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-micro-line {
+    margin-left: 0;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .footer-responsibility-signature {
+    text-align: left;
+  }
+}
+
+/* Mobiles (480px and below) */
+@media screen and (max-width: 480px) {
+  :root {
+    --container-padding: 1.25rem;
+  }
+
+  .brand-logo {
+    font-size: 1.1rem;
+  }
+
+  .hero-canvas-container {
+    height: 280px;
+  }
+
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-headline {
+    font-size: 2.6rem;
+    line-height: 0.98;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .cs-title {
+    font-size: 2.6rem;
+  }
+
+  .cs-info-card {
+    padding: 1.5rem;
+  }
+
+  .lab-main-statement {
+    font-size: 2.2rem;
+  }
+
+  .lab-title {
+    font-size: 1.5rem;
+  }
+
+  .about-hero-headline {
+    font-size: 2.5rem;
+  }
+
+  .about-hero-subheadline {
+    font-size: 1.1rem;
+  }
+
+  .sig-name {
+    font-size: 2.2rem;
+  }
+
+  .cat-title {
+    font-size: 1.8rem;
+  }
+
+  .skill-name {
+    font-size: 1.2rem;
+  }
+
+  .milestones-main-headline {
+    font-size: 2.4rem;
+  }
+
+  .featured-rank-title {
+    font-size: 2.2rem;
+  }
+
+  .photo-secondary-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-main-headline {
+    font-size: 2.8rem;
+  }
+
+  .contact-row-link {
+    font-size: 1.15rem;
+  }
+
+  .contact-3d-container {
+    height: 240px;
+  }
+
+  .sig-name {
+    font-size: 2.8rem;
+  }
+}
+
+/* Compact Mobiles (390px - 360px and below) */
+@media screen and (max-width: 390px) {
+  .hero-canvas-container {
+    height: 240px;
+  }
+
+  .hero-headline {
+    font-size: 2.2rem;
+  }
+
+  .badge-tag {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  .project-title {
+    font-size: 1.75rem;
+  }
+
+  .cs-title {
+    font-size: 2.2rem;
+  }
+
+  .lab-main-statement {
+    font-size: 1.85rem;
+  }
+
+  .about-hero-headline {
+    font-size: 2.1rem;
+  }
+
+  .cat-title {
+    font-size: 1.6rem;
+  }
+
+  .milestones-main-headline {
+    font-size: 2rem;
+  }
+
+  .featured-rank-title {
+    font-size: 1.85rem;
+  }
+
+  .contact-main-headline {
+    font-size: 2.1rem;
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .scroll-indicator .arrow-down {
+    animation: none;
+  }
+
+  .project-visual-wrapper, .ui-card-preview, .cs-gallery-item, .about-artwork-card, .capability-card, .manifesto-item, .toolbox-category-block, .tech-item, .featured-achievement-hero, .featured-img, .contact-action-card, .primary-email-btn {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+

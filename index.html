@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UDAYAN BORGE — MR_RAJEE | Interactive Creative Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Udayan Borge (MR_RAJEE) — Computer Engineering Student, Developer, UI/UX Enthusiast, Android & Web Builder.">
+  <meta name="author" content="Udayan Borge">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="UDAYAN BORGE — Interactive Creative Developer Portfolio">
+  <meta property="og:description" content="I build digital experiences. Computer Engineering Student, Developer, Product Builder.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon placeholder / emoji asset -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" aria-hidden="true"></div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="site-container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Udayan Borge Portfolio Home">
+        MR_RAJEE <span class="logo-accent">.</span>
+      </a>
+
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#experiments" class="nav-link">Experiments</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#work" class="mobile-nav-link">Work</a></li>
+      <li><a href="#experiments" class="mobile-nav-link">Experiments</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- 01 — HERO SECTION -->
+    <section id="hero" class="hero-section" aria-label="Hero Section">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+
+      <!-- 3D Interactive Canvas Container -->
+      <div id="hero-canvas-container" class="hero-canvas-container" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+      </div>
+
+      <div class="site-container hero-content">
+        <div class="hero-left">
+          <div class="hero-tagline">
+            <span class="badge-tag">
+              <span class="dot"></span> MR_RAJEE // DIGITAL STUDIO
+            </span>
+          </div>
+
+          <div class="hero-title-container">
+            <h2 class="hero-name">UDAYAN BORGE</h2>
+            <h1 class="hero-headline">
+              I BUILD <br>
+              DIGITAL <br>
+              <span class="accent-word">EXPERIENCES.</span>
+            </h1>
+          </div>
+
+          <p class="hero-description">
+            Computer Engineering student, developer & creative technologist crafting 
+            high-impact Android apps, web platforms, and interactive digital interfaces.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary">
+              <span>EXPLORE WORK</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span>GET IN TOUCH</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Footer Meta -->
+      <div class="site-container hero-footer">
+        <div class="hero-meta-item">
+          <span class="label-caps">LOCATION & STATUS</span>
+          <span class="badge-tag">2026 • COMPUTER ENGINEERING • INDIA</span>
+        </div>
+
+        <a href="#work" class="scroll-indicator" aria-label="Scroll to explore portfolio">
+          <span>SCROLL TO EXPLORE</span>
+          <span class="arrow-down">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 02 — SELECTED WORK SECTION -->
+    <section id="work" class="work-section" aria-label="Selected Work">
+      <div class="site-container">
+        <!-- Section Header -->
+        <header class="work-header">
+          <div class="section-tag">
+            <span class="badge-tag">
+              <span class="dot"></span> 02 // SELECTED WORK
+            </span>
+          </div>
+          <h2 class="section-title">SELECTED WORK</h2>
+          <div class="editorial-subhead">BUILD → DESIGN → EXPLORE</div>
+          <p class="section-subtitle">
+            Things I've engineered as a developer and designed as a product-minded UI/UX creator.
+          </p>
+        </header>
+
+        <!-- GROUP 01: BUILT PRODUCT -->
+        <div class="work-group">
+          <div class="work-group-divider">
+            <div class="group-badge">
+              <span class="group-number">01</span> BUILT PRODUCT
+            </div>
+            <span class="group-statement">ENGINEERED & DEPLOYED</span>
+          </div>
+
+          <!-- PROJECT 01 — KRISHISETU (FLAGSHIP BUILT PRODUCT) -->
+          <article class="project-card built-flagship" data-cursor="project">
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-num">01</span>
+                <span class="project-type-pill built">BUILT PRODUCT</span>
+                <span class="project-category-tag">Android / AgriTech</span>
+              </div>
+
+              <h3 class="project-title">KrishiSetu</h3>
+
+              <p class="project-description">
+                An Android platform designed to connect farmers with better market opportunities, price discovery and agricultural services.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Kotlin</span>
+                <span class="tech-pill">Firebase</span>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-link-btn">
+                  <span>FLAGSHIP APP</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="project-visual-wrapper">
+              <div class="project-artwork-frame">
+                <div class="artwork-topbar">
+                  <span class="topbar-dot close"></span>
+                  <span class="topbar-dot min"></span>
+                  <span class="topbar-dot max"></span>
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--text-secondary); margin-left: 0.5rem;">krishisetu.android • flagship build 2026</span>
+                </div>
+                <div class="real-image-viewport">
+                  <img src="assets/images/projects/krishisetu/1.jpeg" alt="KrishiSetu Android App Interface" loading="lazy" class="real-project-img">
+                  <div class="gallery-preview-strip" title="Screenshots Gallery">
+                    <img src="assets/images/projects/krishisetu/2.jpeg" alt="KrishiSetu Screen 2" loading="lazy" class="strip-thumb">
+                    <img src="assets/images/projects/krishisetu/3.jpeg" alt="KrishiSetu Screen 3" loading="lazy" class="strip-thumb">
+                    <img src="assets/images/projects/krishisetu/4.jpeg" alt="KrishiSetu Screen 4" loading="lazy" class="strip-thumb">
+                  </div>
+                  <span class="ui-floating-tag">FLAGSHIP BUILT APP</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- GROUP 02: UI/UX DESIGN CONCEPTS -->
+        <div class="work-group">
+          <div class="work-group-divider">
+            <div class="group-badge">
+              <span class="group-number">02</span> UI/UX DESIGN CONCEPTS
+            </div>
+            <span class="group-statement">FIGMA & PRODUCT THINKING</span>
+          </div>
+
+          <!-- PROJECT 02 — ATTENDX (FIGMA CONCEPT, REVERSE LAYOUT) -->
+          <article class="project-card reverse" data-cursor="project">
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-num">02</span>
+                <span class="project-type-pill figma">FIGMA CONCEPT</span>
+                <span class="project-category-tag">UI/UX / Education</span>
+              </div>
+
+              <h3 class="project-title">AttendX</h3>
+
+              <p class="project-description">
+                A digital attendance experience designed to simplify attendance management for students, faculty and administrators.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">Product Design</span>
+                <span class="tech-pill">UI/UX</span>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-link-btn">
+                  <span>DESIGN CASE STUDY</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="project-visual-wrapper">
+              <div class="project-artwork-frame">
+                <div class="artwork-topbar">
+                  <span class="topbar-dot close"></span>
+                  <span class="topbar-dot min"></span>
+                  <span class="topbar-dot max"></span>
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--text-secondary); margin-left: 0.5rem;">attendx.figma • UI/UX Concept</span>
+                </div>
+                <div class="real-image-viewport">
+                  <img src="assets/images/projects/attendx/Screenshot 2026-10-04 233344.png" alt="AttendX Product Design Interface" loading="lazy" class="real-project-img">
+                  <div class="gallery-preview-strip" title="Figma Screens">
+                    <img src="assets/images/projects/attendx/Screenshot 2026-10-04 233355.png" alt="AttendX Screen 2" loading="lazy" class="strip-thumb">
+                    <img src="assets/images/projects/attendx/Screenshot 2026-10-04 233417.png" alt="AttendX Screen 3" loading="lazy" class="strip-thumb">
+                  </div>
+                  <span class="ui-floating-tag">EDTECH CONCEPT</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 — FLOWLENS (FIGMA CONCEPT, STANDARD LAYOUT — EDITORIAL PLACEHOLDER) -->
+          <article class="project-card" data-cursor="project">
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-num">03</span>
+                <span class="project-type-pill figma">FIGMA CONCEPT</span>
+                <span class="project-category-tag">UI/UX / Productivity</span>
+              </div>
+
+              <h3 class="project-title">FlowLens</h3>
+
+              <p class="project-description">
+                A productivity experience designed around focus, organization and personal workflow.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">Product Design</span>
+                <span class="tech-pill">Design System</span>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-link-btn">
+                  <span>DESIGN CASE STUDY</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="project-visual-wrapper">
+              <div class="project-artwork-frame">
+                <div class="artwork-topbar">
+                  <span class="topbar-dot close"></span>
+                  <span class="topbar-dot min"></span>
+                  <span class="topbar-dot max"></span>
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--text-secondary); margin-left: 0.5rem;">flowlens.figma • Focus UI</span>
+                </div>
+                <div class="artwork-body">
+                  <div class="ui-card-preview" style="border-left: 3px solid #2E7D32;">
+                    <div class="ui-card-header">
+                      <span class="ui-card-title">FlowLens • Focus Canvas</span>
+                      <span class="ui-status-badge" style="background: rgba(46,125,50,0.1); color: #2E7D32;">FIGMA CONCEPT</span>
+                    </div>
+                    <div class="ui-card-skeleton">
+                      <div class="sk-line w-80" style="background: #2E7D32; opacity: 0.8;"></div>
+                      <div class="sk-line w-60"></div>
+                      <div class="sk-line w-40"></div>
+                    </div>
+                  </div>
+                  <div class="artwork-watermark">FLOWLENS</div>
+                  <span class="ui-floating-tag">PRODUCTIVITY</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04 — KRISHISHARE (FIGMA CONCEPT, REVERSE LAYOUT) -->
+          <article class="project-card reverse" data-cursor="project">
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-num">04</span>
+                <span class="project-type-pill figma">FIGMA CONCEPT</span>
+                <span class="project-category-tag">UI/UX / AgriTech</span>
+              </div>
+
+              <h3 class="project-title">KrishiShare</h3>
+
+              <p class="project-description">
+                A product concept exploring how farmers could share agricultural equipment and improve access to essential resources.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">Product Design</span>
+                <span class="tech-pill">User Research</span>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-link-btn">
+                  <span>DESIGN CASE STUDY</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="project-visual-wrapper">
+              <div class="project-artwork-frame">
+                <div class="artwork-topbar">
+                  <span class="topbar-dot close"></span>
+                  <span class="topbar-dot min"></span>
+                  <span class="topbar-dot max"></span>
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--text-secondary); margin-left: 0.5rem;">krishishare.figma • Equipment Ecosystem</span>
+                </div>
+                <div class="real-image-viewport">
+                  <img src="assets/images/projects/krishishare/Screenshot 2026-10-04 234102.png" alt="KrishiShare Product Concept UI" loading="lazy" class="real-project-img">
+                  <div class="gallery-preview-strip" title="Figma Screens">
+                    <img src="assets/images/projects/krishishare/Screenshot 2026-10-04 234114.png" alt="KrishiShare Screen 2" loading="lazy" class="strip-thumb">
+                    <img src="assets/images/projects/krishishare/Screenshot 2026-10-04 234209.png" alt="KrishiShare Screen 3" loading="lazy" class="strip-thumb">
+                  </div>
+                  <span class="ui-floating-tag">AGRITECH CONCEPT</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 05 — YUMMQUICK (FIGMA CONCEPT, STANDARD LAYOUT) -->
+          <article class="project-card" data-cursor="project">
+            <div class="project-info">
+              <div class="project-meta-top">
+                <span class="project-num">05</span>
+                <span class="project-type-pill figma">FIGMA CONCEPT</span>
+                <span class="project-category-tag">UI/UX / Food Delivery</span>
+              </div>
+
+              <h3 class="project-title">YummQuick</h3>
+
+              <p class="project-description">
+                A food-delivery product concept focused on a simple, fast and intuitive ordering experience.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">Product Design</span>
+                <span class="tech-pill">Mobile UI</span>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-link-btn">
+                  <span>DESIGN CASE STUDY</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="project-visual-wrapper">
+              <div class="project-artwork-frame">
+                <div class="artwork-topbar">
+                  <span class="topbar-dot close"></span>
+                  <span class="topbar-dot min"></span>
+                  <span class="topbar-dot max"></span>
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--text-secondary); margin-left: 0.5rem;">yummquick.figma • Food Order Flow</span>
+                </div>
+                <div class="real-image-viewport">
+                  <img src="assets/images/projects/yummquick/Screenshot 2026-10-04 233717.png" alt="YummQuick Food Delivery UI" loading="lazy" class="real-project-img">
+                  <div class="gallery-preview-strip" title="Figma Screens">
+                    <img src="assets/images/projects/yummquick/Screenshot 2026-10-04 233733.png" alt="YummQuick Screen 2" loading="lazy" class="strip-thumb">
+                    <img src="assets/images/projects/yummquick/Screenshot 2026-10-04 233808.png" alt="YummQuick Screen 3" loading="lazy" class="strip-thumb">
+                  </div>
+                  <span class="ui-floating-tag">FOOD DELIVERY</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+
+        <!-- SECTION TRANSITION BLOCK -->
+        <div class="work-transition-block">
+          <span class="badge-tag"><span class="dot"></span> NEXT STEP</span>
+          <h3 class="transition-title">MORE THAN JUST PROJECTS.</h3>
+          <p class="transition-subtitle">Experiments, hackathons, prototypes and ideas.</p>
+          <a href="#experiments" class="btn-primary">
+            <span>EXPLORE EXPERIMENTS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 03 — EXPERIMENTS / LAB SECTION -->
+    <section id="experiments" class="experiments-section" aria-label="Experiments Laboratory">
+      <div class="site-container">
+        
+        <!-- Section Intro -->
+        <header class="lab-header-intro">
+          <span class="lab-section-tag">03 / LAB</span>
+          <h2 class="lab-main-statement">WHERE IDEAS GET WEIRD.</h2>
+          <p class="lab-supporting-copy">
+            Hackathons, prototypes, interface experiments, AI ideas, creative coding and things I built just to see if I could.
+          </p>
+        </header>
+
+        <!-- Category Interactive Filter Bar -->
+        <nav class="lab-filter-bar" role="tablist" aria-label="Experiment Category Filter">
+          <button class="lab-filter-tab active" data-filter="ALL" role="tab" aria-selected="true">ALL</button>
+          <button class="lab-filter-tab" data-filter="HACKATHONS" role="tab" aria-selected="false">HACKATHONS</button>
+          <button class="lab-filter-tab" data-filter="UI/UX" role="tab" aria-selected="false">UI/UX</button>
+          <button class="lab-filter-tab" data-filter="AI" role="tab" aria-selected="false">AI</button>
+          <button class="lab-filter-tab" data-filter="ANDROID" role="tab" aria-selected="false">ANDROID</button>
+          <button class="lab-filter-tab" data-filter="WEB" role="tab" aria-selected="false">WEB</button>
+          <button class="lab-filter-tab" data-filter="PROTOTYPES" role="tab" aria-selected="false">PROTOTYPES</button>
+          <button class="lab-filter-tab" data-filter="3D" role="tab" aria-selected="false">3D</button>
+        </nav>
+
+        <!-- Editorial Items Container -->
+        <div id="experiments-list-container" class="experiments-list"></div>
+
+        <!-- Section Transition Block -->
+        <div class="lab-transition-block">
+          <span class="badge-tag"><span class="dot"></span> NEXT STEP</span>
+          <h3 class="lab-transition-title">I'M STILL BUILDING.</h3>
+          <p class="lab-transition-subtitle">Next idea loading.</p>
+          <a href="#about" class="lab-scroll-btn">
+            <span>SCROLL TO MEET THE BUILDER ↓</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 04 — ABOUT / THE BUILDER SECTION -->
+    <section id="about" class="about-section" aria-label="About Udayan Borge">
+      <div class="site-container">
+
+        <!-- 01. SECTION HEADER INTRO -->
+        <header class="about-header-intro">
+          <span class="about-section-tag">04 / THE BUILDER</span>
+          <h2 class="about-hero-headline">HI, I'M UDAYAN.</h2>
+          <p class="about-hero-subheadline">
+            I BUILD DIGITAL EXPERIENCES AT THE INTERSECTION OF TECHNOLOGY, DESIGN & IDEAS.
+          </p>
+        </header>
+
+        <!-- 02. MAIN INTRODUCTION & ABSTRACT VISUAL -->
+        <div class="about-intro-grid">
+          <div class="about-bio-text">
+            <p class="about-primary-text">
+              I'm <strong>Udayan Borge</strong> — a Computer Engineering student, developer and product-minded designer who enjoys turning ideas into things people can actually interact with.
+            </p>
+            <p class="about-secondary-text">
+              I work across Android development, UI/UX, prototyping and emerging technologies, constantly moving between code and design to figure out what makes a digital experience feel right.
+            </p>
+          </div>
+
+          <!-- ABSTRACT VISUAL ELEMENT (No fake portrait!) -->
+          <div class="about-visual-frame" data-cursor="hover">
+            <div class="about-artwork-card">
+              <div class="artwork-top-meta">
+                <span class="meta-dot"></span>
+                <span class="meta-label">BUILDER CANVAS // 2026</span>
+              </div>
+              <div class="about-monogram-container">
+                <svg class="about-abstract-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="100" cy="100" r="80" stroke="#FF4D00" stroke-width="1.5" stroke-dasharray="4 4" class="svg-orbit-outer" />
+                  <circle cx="100" cy="100" r="50" stroke="rgba(255,255,255,0.2)" stroke-width="1" class="svg-orbit-inner" />
+                  <path d="M70 130V70L100 100L130 70V130" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="svg-initials" />
+                  <circle cx="100" cy="100" r="6" fill="#FF4D00" class="svg-center-dot" />
+                </svg>
+              </div>
+              <div class="artwork-bottom-meta">
+                <span class="artwork-tag">COMPUTER ENGINEERING</span>
+                <span class="artwork-tag">PUNE, IN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03. PERSONAL APPROACH (HOW I THINK MANIFESTO) -->
+        <div class="about-manifesto-block">
+          <span class="about-block-label">HOW I THINK</span>
+          
+          <div class="manifesto-grid">
+            <div class="manifesto-item" data-step="01">
+              <span class="manifesto-word">BUILD IT.</span>
+            </div>
+            <div class="manifesto-item" data-step="02">
+              <span class="manifesto-word">TEST IT.</span>
+            </div>
+            <div class="manifesto-item" data-step="03">
+              <span class="manifesto-word">BREAK IT.</span>
+            </div>
+            <div class="manifesto-item" data-step="04">
+              <span class="manifesto-word">MAKE IT BETTER.</span>
+            </div>
+          </div>
+
+          <p class="manifesto-supporting-text">
+            "I like learning by building — from mobile products and interface concepts to hackathons, prototypes and experiments that start as rough ideas."
+          </p>
+        </div>
+
+        <!-- 04. WHAT I DO (SERVICES / CAPABILITIES LIST) -->
+        <div class="about-capabilities-block">
+          <span class="about-block-label">WHAT I DO</span>
+
+          <div class="capabilities-grid">
+            <article class="capability-card">
+              <span class="capability-num">01</span>
+              <h3 class="capability-title">PRODUCT DEVELOPMENT</h3>
+              <p class="capability-desc">
+                Building mobile and digital products from idea to working experience.
+              </p>
+            </article>
+
+            <article class="capability-card">
+              <span class="capability-num">02</span>
+              <h3 class="capability-title">UI / UX DESIGN</h3>
+              <p class="capability-desc">
+                Designing interfaces, flows and product concepts with a focus on clarity and usability.
+              </p>
+            </article>
+
+            <article class="capability-card">
+              <span class="capability-num">03</span>
+              <h3 class="capability-title">PROTOTYPING</h3>
+              <p class="capability-desc">
+                Turning early ideas into interactive experiences that can be tested and improved.
+              </p>
+            </article>
+
+            <article class="capability-card">
+              <span class="capability-num">04</span>
+              <h3 class="capability-title">EXPERIMENTATION</h3>
+              <p class="capability-desc">
+                Exploring AI, emerging technologies, creative interfaces and unconventional ideas.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 05. BEYOND THE SCREEN & LOCATION / EDUCATION -->
+        <div class="about-meta-grid">
+          
+          <!-- BEYOND THE SCREEN -->
+          <div class="about-personal-column">
+            <span class="about-block-label">BEYOND THE SCREEN</span>
+            
+            <div class="interests-pills-list">
+              <span class="interest-pill">MOTORCYCLES</span>
+              <span class="interest-pill">TRAVEL</span>
+              <span class="interest-pill">TREKKING</span>
+              <span class="interest-pill">PHOTOGRAPHY</span>
+            </div>
+
+            <p class="interests-copy">
+              When I'm away from the screen, you'll probably find me riding, travelling, exploring forts, taking photographs or looking for the next idea to build.
+            </p>
+          </div>
+
+          <!-- LOCATION / EDUCATION -->
+          <div class="about-location-column">
+            <span class="about-block-label">LOCATION & EDUCATION</span>
+
+            <div class="location-details-card">
+              <div class="location-row">
+                <span class="loc-label">LOCATION</span>
+                <span class="loc-value">PUNE, INDIA</span>
+              </div>
+
+              <div class="location-row">
+                <span class="loc-label">DISCIPLINE</span>
+                <span class="loc-value">COMPUTER ENGINEERING</span>
+              </div>
+
+              <div class="location-row">
+                <span class="loc-label">TIMELINE</span>
+                <span class="loc-value">EXPECTED GRADUATION — 2028</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 06. SECTION TRANSITION BLOCK -->
+        <div class="about-transition-block">
+          <span class="badge-tag"><span class="dot"></span> NEXT STEP</span>
+          <h3 class="about-transition-title">LET'S TALK ABOUT WHAT I CAN BUILD.</h3>
+          <a href="#skills" class="about-scroll-btn">
+            <span>EXPLORE THE TOOLBOX ↓</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 05 — TOOLBOX / SKILLS SECTION -->
+    <section id="skills" class="toolbox-section" aria-label="Toolbox and Technical Range">
+      <div class="site-container">
+        
+        <!-- Section Intro Header -->
+        <header class="toolbox-header-intro">
+          <span class="toolbox-section-tag">05 / TOOLBOX</span>
+          <p class="toolbox-supporting-copy">
+            LANGUAGES, FRAMEWORKS, TOOLS AND IDEAS THAT HELP ME TURN CONCEPTS INTO EXPERIENCES.
+          </p>
+        </header>
+
+        <!-- Interactive Technology Wall Container -->
+        <div id="toolbox-wall-container" class="toolbox-wall-container"></div>
+
+      </div>
+    </section>
+
+    <!-- 06 — HACKATHONS & MILESTONES SECTION -->
+    <section id="achievements" class="milestones-section" aria-label="Hackathons and Milestones">
+      <div class="site-container"></div>
+    </section>
+
+    <!-- 07 — CONTACT SECTION -->
+    <section id="contact" class="contact-section" aria-label="Contact Section">
+      <div class="site-container"></div>
+    </section>
+
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" aria-label="Site Footer">
+    <div class="site-container">
+      
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <span class="footer-logo">UDAYAN BORGE</span>
+          <span class="footer-handle">MR_RAJEE</span>
+        </div>
+
+        <nav class="footer-nav-links" aria-label="Footer Navigation">
+          <a href="#work" class="footer-link">WORK</a>
+          <a href="#experiments" class="footer-link">EXPERIMENTS</a>
+          <a href="#about" class="footer-link">ABOUT</a>
+          <a href="#skills" class="footer-link">TOOLBOX</a>
+          <a href="#achievements" class="footer-link">MILESTONES</a>
+          <a href="#contact" class="footer-link">CONTACT</a>
+        </nav>
+      </div>
+
+      <!-- Hero Tagline Block: Spider-Man-Inspired Original Tagline & Micro-line -->
+      <div class="footer-hero-row">
+        <div class="footer-tagline-container">
+          <div class="footer-statement-line">
+            <span class="footer-spider-badge" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <!-- Original geometric spider motif -->
+                <ellipse cx="12" cy="14" rx="3.5" ry="4.5" stroke="var(--spider-red)" stroke-width="1.5" />
+                <circle cx="12" cy="7.5" r="2.2" stroke="var(--spider-blue)" stroke-width="1.3" />
+                <path d="M9 12 C 6 10, 4 11, 2 13" stroke="var(--spider-blue)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M8.8 14 C 5.5 14, 3.5 16, 2.5 19" stroke="var(--spider-blue)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M9 10 C 6 7, 4 6, 3 3" stroke="var(--spider-blue)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M9.5 16 C 7 18, 5 21, 4 23" stroke="var(--spider-blue)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M15 12 C 18 10, 20 11, 22 13" stroke="var(--spider-blue)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M15.2 14 C 18.5 14, 20.5 16, 21.5 19" stroke="var(--spider-blue)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M15 10 C 18 7, 20 6, 21 3" stroke="var(--spider-blue)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M14.5 16 C 17 18, 19 21, 20 23" stroke="var(--spider-blue)" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="footer-statement">BUILDING WITH PURPOSE. SHOWING UP LIKE A HERO.</span>
+          </div>
+          <span class="footer-micro-line">FRIENDLY NEIGHBORHOOD DEVELOPER.</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-copy">
+          © 2026 UDAYAN BORGE. ALL RIGHTS RESERVED.
+        </div>
+
+        <div class="footer-responsibility-signature">
+          WITH GREAT IDEAS COMES GREAT RESPONSIBILITY.
+        </div>
+
+        <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Back to Top of Page">
+          BACK TO TOP ↑
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactive Project Case Study & Lightbox Containers -->
+  <div id="project-detail-overlay" class="project-detail-overlay" role="dialog" aria-modal="true" aria-label="Project Case Study Detail"></div>
+  <div id="experiment-detail-overlay" class="project-detail-overlay" role="dialog" aria-modal="true" aria-label="Experiment Detail"></div>
+  <div id="image-lightbox" class="image-lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox Preview"></div>
+
+  <!-- Third Party CDNs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- Application Modules -->
+  <script src="js/projects.js"></script>
+  <script src="js/experiments.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/casestudy.js"></script>
+  <script src="js/lab.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/toolbox.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
